@@ -1,0 +1,9 @@
+*~
+*.swp
+*.swo
+.idea
+build
+xcuserdata
+xcshareddata
+NamoIOSSamples.xcodeproj/xcuserdata
+NamoIOSSamples.xcodeproj/xcsharedata
