@@ -36,7 +36,7 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
   }
 
-  self.customStreamAdPlacer = [NAMOCustomStreamAdPlacer placer];
+  self.customStreamAdPlacer = [NAMOCustomStreamAdPlacer placerForViewController:self];
   [self.customStreamAdPlacer registerAdFormat:[CustomStreamGalleryAdView class]];
   [self.customStreamAdPlacer setDelegate:self];
   [self.customStreamAdPlacer requestAdsWithTargeting:nil];
