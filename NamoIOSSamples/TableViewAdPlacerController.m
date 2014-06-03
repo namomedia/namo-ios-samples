@@ -32,7 +32,7 @@
   }
 
   // Namo setup
-  self.adPlacer = [NAMOTableViewAdPlacer placerForTableView:self.tableView];
+  self.adPlacer = [NAMOTableViewAdPlacer placerForTableView:self.tableView viewController:self];
   [self.adPlacer registerAdFormat:TableViewAdCell.class];
 
   [self.adPlacer requestAdsWithTargeting:nil];

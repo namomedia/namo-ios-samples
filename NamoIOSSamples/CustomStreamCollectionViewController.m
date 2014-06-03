@@ -25,7 +25,7 @@
   [self.collectionView registerClass:CustomStreamCollectionAdCell.class
           forCellWithReuseIdentifier:[CustomStreamCollectionAdCell formatIdentifier]];
 
-  self.adPlacer = [NAMOCustomStreamAdPlacer placer];
+  self.adPlacer = [NAMOCustomStreamAdPlacer placerForViewController:self];
   [self.adPlacer registerAdFormat:CustomStreamCollectionAdCell.class];
   self.adPlacer.delegate = self;
 

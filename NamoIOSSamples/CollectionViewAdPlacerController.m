@@ -18,7 +18,8 @@
   [self.collectionView registerClass:CollectionViewAdPlacerContentCell.class
           forCellWithReuseIdentifier:[CollectionViewAdPlacerContentCell reuseIdentifier]];
 
-  self.adPlacer = [NAMOCollectionViewAdPlacer placerForCollectionView:self.collectionView];
+  self.adPlacer = [NAMOCollectionViewAdPlacer placerForCollectionView:self.collectionView
+                                                       viewController:self];
   [self.adPlacer registerAdFormat:CollectionViewAdPlacerAdCell.class];
 
   [self.adPlacer requestAdsWithTargeting:nil];
